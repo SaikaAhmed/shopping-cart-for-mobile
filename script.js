@@ -10,16 +10,31 @@
          document.getElementById("firstCartPrice").innerText = firstCartPriceNum + 1219; //price option
       const subTotal = document.getElementById("subTotal").innerText;
       const subNum = parseFloat(subTotal);
-      document.getElementById("subTotal").innerText = subNum + 1278; //subtotal price option
+      document.getElementById("subTotal").innerText = 1278 + firstCartPriceNum;
+      const subTotalNum = 1278 + firstCartPriceNum; //subtotal price option
       const tax = document.getElementById("tax").innerText;
       const taxNum = parseFloat(tax);
       document.getElementById("tax").innerText = taxNum + 3;
+      const taxTotalNum = taxNum + 3;
       const total = document.getElementById("total").innerText;
       const totalNum = parseFloat(total);
       if(total)
-      document.getElementById("total").innerText = totalNum + 1281;
+      document.getElementById("total").innerText = subTotalNum + taxTotalNum;
       })
 
+   //    document.getElementById("firstCartPrice").innerText = firstCartPriceNum + 1219;
+   //    const subTotal = document.getElementById("subTotal").innerText;
+   //    const subNum = parseFloat(subTotal);
+   //    document.getElementById("subTotal").innerText = 1278 + firstCartPriceNum;  
+   //    const subTotalNum = 1278 + firstCartPriceNum;
+   //   const tax = document.getElementById("tax").innerText;
+   //   const taxNum = parseFloat(tax);
+   //   document.getElementById("tax").innerText = taxNum + 3;
+   //   const taxTotalNum = taxNum + 3;
+   //   const total = document.getElementById("total").innerText;
+   //   const totalNum = parseFloat(total);
+   //   document.getElementById("total").innerText = subTotalNum + taxTotalNum  ;
+  
 
 
 // decrease first cart item
@@ -34,13 +49,15 @@ const firstMinusBtn = document.getElementById("firstMinusBtn");
          document.getElementById("firstCartPrice").innerText = firstCartPriceNum - 1219; //price option
       const subTotal = document.getElementById("subTotal").innerText;
       const subNum = parseFloat(subTotal);
-      document.getElementById("subTotal").innerText = subNum - 1278; //subtotal price option
+      document.getElementById("subTotal").innerText = subNum - 1219;;
+      const subTotalNum = subNum - 1219;//subtotal price option
       const tax = document.getElementById("tax").innerText;
       const taxNum = parseFloat(tax);
       document.getElementById("tax").innerText = taxNum - 3;
+      const taxTotalNum =  taxNum - 3;
       const total = document.getElementById("total").innerText;
       const totalNum = parseFloat(total);
-      document.getElementById("total").innerText = totalNum - 1281;
+      document.getElementById("total").innerText = subTotalNum + taxTotalNum ;
          }
       })
 
@@ -83,13 +100,15 @@ const secondPlusBtn = document.getElementById("secondPlusBtn");
          document.getElementById("secondCartPrice").innerText = secondCartPriceNum + 59; //price option
       const subTotal = document.getElementById("subTotal").innerText;
       const subNum = parseFloat(subTotal);
-      document.getElementById("subTotal").innerText = subNum + 59; //subtotal price option
+      document.getElementById("subTotal").innerText = secondCartPriceNum + 59;
+      const subTotalNum =  secondCartPriceNum + 59;//subtotal price option
       const tax = document.getElementById("tax").innerText;
       const taxNum = parseFloat(tax);
       document.getElementById("tax").innerText = taxNum + 2;
+      const taxTotalNum = taxNum + 2;
       const total = document.getElementById("total").innerText;
       const totalNum = parseFloat(total);
-      document.getElementById("total").innerText = totalNum + 59;
+      document.getElementById("total").innerText = subTotalNum + taxTotalNum;
       })
 
 //decreasing second cart item
@@ -104,13 +123,15 @@ const secondMinusBtn = document.getElementById("secondMinusBtn");
          document.getElementById("secondCartPrice").innerText = secondCartPriceNum - 59; //price option
       const subTotal = document.getElementById("subTotal").innerText;
       const subNum = parseFloat(subTotal);
-      document.getElementById("subTotal").innerText = subNum - 59; //subtotal price option
+      document.getElementById("subTotal").innerText = subNum - 59;
+      const subTotalNum = secondCartPriceNum - 59; //subtotal price option
       const tax = document.getElementById("tax").innerText;
       const taxNum = parseFloat(tax);
       document.getElementById("tax").innerText = taxNum - 2;
+      const taxTotalNum = taxNum - 2;
       const total = document.getElementById("total").innerText;
       const totalNum = parseFloat(total);
-      document.getElementById("total").innerText = totalNum - 59;
+      document.getElementById("total").innerText = subTotalNum + taxTotalNum;
          }
       })
      

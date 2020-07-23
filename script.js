@@ -22,20 +22,6 @@
       document.getElementById("total").innerText = subTotalNum + taxTotalNum;
       })
 
-   //    document.getElementById("firstCartPrice").innerText = firstCartPriceNum + 1219;
-   //    const subTotal = document.getElementById("subTotal").innerText;
-   //    const subNum = parseFloat(subTotal);
-   //    document.getElementById("subTotal").innerText = 1278 + firstCartPriceNum;  
-   //    const subTotalNum = 1278 + firstCartPriceNum;
-   //   const tax = document.getElementById("tax").innerText;
-   //   const taxNum = parseFloat(tax);
-   //   document.getElementById("tax").innerText = taxNum + 3;
-   //   const taxTotalNum = taxNum + 3;
-   //   const total = document.getElementById("total").innerText;
-   //   const totalNum = parseFloat(total);
-   //   document.getElementById("total").innerText = subTotalNum + taxTotalNum  ;
-  
-
 
 // decrease first cart item
 const firstMinusBtn = document.getElementById("firstMinusBtn");
